@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +15,6 @@
     </style>
     <script src="lib/miniquery.js"></script>
   </head>
-
   <body>
     <h3>Hall of Demos</h3>
 
@@ -37,7 +35,6 @@
       <a class="klass" href="#hello">Hello!</a>
       <div class="klass">class: klass 2</div>
     </div>
-
   </body>
 
   <script>
@@ -49,12 +46,14 @@
       console.log(`SweetSelector.select('a')`)
       console.log(SweetSelector.select('a'))
     }
+
     function demoDOM() {
       DOM.hide('.klass')
       DOM.show('.klass')
       DOM.removeClass('.klass', 'shaded')
       DOM.addClass('.klass', 'shaded')
     }
+
     function demoEventDispatcher() {
       EventDispatcher.on('.klass', 'click', function() {
         console.log("Awesome")
